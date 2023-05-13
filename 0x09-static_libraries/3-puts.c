@@ -1,15 +1,14 @@
 #include "main.h"
+
 /**
- * _puts - Check if a number is greater than 0
- * @str: The number to be checked
+ * _puts - Function to print a string followed by a new line
+ * @str: Pointer to a string
+ * Return: void
  */
+
 void _puts(char *str)
 {
-int i;
-for (i = 0; *str != '\0'; i++)
-{
-_putchar(*str);
-str++;
-}
-_putchar('\n');
+	while (*str)
+		_putchar(*str++);
+	_putchar('\n');
 }
